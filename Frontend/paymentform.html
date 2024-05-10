@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Payment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-4 mb-4">Add Payment</h2>
+    <form action="/insertpayment" method="post" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="payment_date">Payment Date:</label>
+            <input type="date" id="payment_date" name="payment_date" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter the payment date.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="payment_amount">Payment Amount:</label>
+            <input type="number" id="payment_amount" name="payment_amount" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter the payment amount.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="payment_method">Payment Method:</label>
+            <input type="text" id="payment_method" name="payment_method" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter the payment method.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="payment_status">Payment Status:</label>
+            <input type="text" id="payment_status" name="payment_status" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter the payment status.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="insurance">Insurance:</label>
+            <input type="text" id="insurance" name="insurance" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter the insurance information.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Payment</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Medical Report</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* You can add custom CSS here if needed */
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-4 mb-4">Remove Medical Report</h2>
+    <form action="/removeReport" method="post" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="report_id">Report ID:</label>
+            <input type="text" id="report_id" name="report_id" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter the report ID.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-danger">Remove Report</button>
+    </form>
+</div>
+</body>
+</html>

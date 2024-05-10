@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Medical Reports</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* You can add custom CSS here if needed */
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-4 mb-4">List of Medical Reports</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Report ID</th>
+            <th>Report Date</th>
+            <th>Report Type</th>
+            <th>Description</th>
+            <th>Test Results</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in result %}
+        <tr>
+            <td>{{ item['ReportID'] }}</td>
+            <td>{{ item['ReportDate'] }}</td>
+            <td>{{ item['ReportType'] }}</td>
+            <td>{{ item['Description'] }}</td>
+            <td>{{ item['TestResults'] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Admin Helper</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #6c757d;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .btn-category {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn-patients,
+        .btn-staff,
+        .btn-reports,
+        .btn-payment {
+            background-color: #007bff;
+        }
+
+        .btn-patients:hover,
+        .btn-staff:hover,
+        .btn-reports:hover,
+        .btn-payment:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Hospital Admin Helper</h1>
+    <p>This is a simple Flask application designed to assist hospital administrators. Use the navigation below to explore.</p>
+    <h2>Navigation</h2>
+    <ul>
+        <li><a href="/listpatients" class="btn btn-category btn-patients">Patients</a></li>
+        <li><a href="/liststaff" class="btn btn-category btn-staff">Staff</a></li>
+        <li><a href="/listreports" class="btn btn-category btn-reports">Medical Reports</a></li>
+        <li><a href="/listpayments" class="btn btn-category btn-payment">Payments</a></li>
+    </ul>
+</div>
+</body>
+</html>

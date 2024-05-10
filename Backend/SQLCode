@@ -1,0 +1,51 @@
+create table Patients (
+    -> patientid int(3) primary key,
+    -> name varchar(20),
+    -> age int(3),
+    -> gender varchar(20) );
+
+
+INSERT INTO Patients VALUES (1, 'John Doe', 35, 'Male');
+INSERT INTO Patients VALUES (2, 'Steven Zackary', 43, 'Male');
+INSERT INTO Patients VALUES (3, 'Mason Mount', 55, 'Male');
+
+CREATE TABLE Staff (
+    staffID INT PRIMARY KEY,
+    departmentName VARCHAR(255) NOT NULL,
+    description VARCHAR(255)
+);
+
+
+
+ CREATE TABLE MedicalReports (
+    ->     ReportID INT PRIMARY KEY,
+    ->     ReportDate DATE NOT NULL,
+    ->     ReportType VARCHAR(255) NOT NULL,
+    ->     Description TEXT,
+    ->     TestResults TEXT
+    -> );
+
+
+
+INSERT INTO MedicalReports (ReportID, ReportDate, ReportType, Description, TestResults)
+VALUES (1, '2024-04-01', 'MRI Scan', 'MRI report for patient John Doe.', 'No abnormalities detected.');
+
+INSERT INTO MedicalReports (ReportID, ReportDate, ReportType, Description, TestResults)
+VALUES (2, '2024-03-15', 'Blood Test', 'Blood test results for patient Jane Smith.', 'Normal levels of all parameters.');
+
+INSERT INTO MedicalReports (ReportID, ReportDate, ReportType, Description, TestResults)
+VALUES (3, '2024-02-28', 'X-Ray', 'X-ray report for patient David Johnson.', 'Fracture detected in the left arm.');
+
+CREATE TABLE Payments (
+    PaymentID INT PRIMARY KEY,
+    PaymentDate DATE,
+    PaymentAmount INT,
+    PaymentMethod VARCHAR(50),
+    PaymentStatus VARCHAR(50),
+    Insurance VARCHAR(255)
+);
+
+INSERT INTO Payments (PaymentID, PaymentDate, PaymentAmount, PaymentMethod, PaymentStatus, Insurance) VALUES
+(1, '2024-04-10', 150, 'Credit Card', 'Paid', 'XYZ Insurance'),
+(2, '2024-04-12', 200, 'Cash', 'Pending', 'ABC Insurance'),
+(3, '2024-04-15', 100, 'Debit Card', 'Paid', 'PQR Insurance');
